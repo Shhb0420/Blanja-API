@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 16, 2021 at 11:52 AM
+-- Generation Time: Feb 16, 2021 at 05:31 PM
 -- Server version: 8.0.23-0ubuntu0.20.04.1
 -- PHP Version: 7.4.3
 
@@ -37,7 +37,7 @@ CREATE TABLE `address_customer` (
   `zip_code` varchar(255) NOT NULL,
   `country` varchar(255) NOT NULL,
   `id_user` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `address_customer`
@@ -55,10 +55,10 @@ INSERT INTO `address_customer` (`id_address`, `fullname`, `address`, `city`, `re
 
 CREATE TABLE `categories` (
   `id_categories` int NOT NULL,
-  `category_name` varchar(255) NOT NULL,
-  `category_photo` varchar(255) NOT NULL,
-  `color_hexa` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `category_name` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `category_photo` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `color_hexa` varchar(255) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `categories`
@@ -79,9 +79,9 @@ INSERT INTO `categories` (`id_categories`, `category_name`, `category_photo`, `c
 
 CREATE TABLE `colors` (
   `id` int NOT NULL,
-  `color_name` varchar(30) NOT NULL,
-  `color_hexa` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `color_name` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `color_hexa` varchar(10) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `colors`
@@ -101,8 +101,8 @@ INSERT INTO `colors` (`id`, `color_name`, `color_hexa`) VALUES
 
 CREATE TABLE `conditions` (
   `id` int NOT NULL,
-  `conditions` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `conditions` varchar(10) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `conditions`
@@ -126,7 +126,7 @@ CREATE TABLE `customer_detail` (
   `gender` varchar(11) NOT NULL,
   `date_of_birth` varchar(255) NOT NULL,
   `user_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -137,7 +137,7 @@ CREATE TABLE `customer_detail` (
 CREATE TABLE `levels` (
   `id` int NOT NULL,
   `level` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `levels`
@@ -160,10 +160,10 @@ CREATE TABLE `orders` (
   `user_id` int NOT NULL,
   `seller_id` int DEFAULT NULL,
   `id_address` int NOT NULL,
-  `status_order` set('On Process','Delivery','Delivered') NOT NULL DEFAULT 'On Process',
+  `status_order` set('On Process','Delivery','Delivered') CHARACTER SET latin1 NOT NULL DEFAULT 'On Process',
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `orders`
@@ -199,7 +199,7 @@ CREATE TABLE `order_details` (
   `product_id` int NOT NULL,
   `product_qty` int NOT NULL,
   `sub_total_item` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `order_details`
@@ -1428,7 +1428,7 @@ CREATE TABLE `otp_reset` (
   `id` int NOT NULL,
   `email` varchar(255) NOT NULL,
   `otp` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `otp_reset`
@@ -1445,18 +1445,18 @@ INSERT INTO `otp_reset` (`id`, `email`, `otp`) VALUES
 
 CREATE TABLE `products` (
   `id` int NOT NULL,
-  `product_name` varchar(255) NOT NULL,
+  `product_name` varchar(255) CHARACTER SET latin1 NOT NULL,
   `category_id` int NOT NULL,
   `condition_id` int NOT NULL,
   `product_price` int NOT NULL,
   `product_qty` int NOT NULL,
-  `product_desc` text NOT NULL,
-  `product_photo` text NOT NULL,
+  `product_desc` text CHARACTER SET latin1 NOT NULL,
+  `product_photo` text CHARACTER SET latin1 NOT NULL,
   `user_id` int NOT NULL,
   `status_product_id` int NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `products`
@@ -1480,7 +1480,7 @@ CREATE TABLE `product_colors` (
   `id` int NOT NULL,
   `product_id` int NOT NULL,
   `color_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product_colors`
@@ -1542,7 +1542,7 @@ CREATE TABLE `product_sizes` (
   `id` int NOT NULL,
   `product_id` int NOT NULL,
   `size_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product_sizes`
@@ -1610,7 +1610,7 @@ CREATE TABLE `ratings` (
   `id` int NOT NULL,
   `product_id` int NOT NULL,
   `rating` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `ratings`
@@ -1634,7 +1634,7 @@ CREATE TABLE `reviews` (
   `product_id` int NOT NULL,
   `user_id` int NOT NULL,
   `review` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `reviews`
@@ -1663,7 +1663,7 @@ CREATE TABLE `seller_detail` (
   `phone` int NOT NULL,
   `store_desc` varchar(255) NOT NULL,
   `user_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1673,8 +1673,8 @@ CREATE TABLE `seller_detail` (
 
 CREATE TABLE `size` (
   `id` int NOT NULL,
-  `size` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `size` varchar(10) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `size`
@@ -1703,7 +1703,7 @@ INSERT INTO `size` (`id`, `size`) VALUES
 CREATE TABLE `status_history` (
   `id` int NOT NULL,
   `name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `status_history`
@@ -1723,7 +1723,7 @@ INSERT INTO `status_history` (`id`, `name`) VALUES
 CREATE TABLE `status_product` (
   `id` int NOT NULL,
   `name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `status_product`
@@ -1743,7 +1743,7 @@ INSERT INTO `status_product` (`id`, `name`) VALUES
 CREATE TABLE `token_whitelist` (
   `id` int NOT NULL,
   `token` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `token_whitelist`
@@ -1834,7 +1834,7 @@ CREATE TABLE `users` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `level_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
