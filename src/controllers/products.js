@@ -51,9 +51,7 @@ module.exports = {
     const user_id = req.decodedToken.id;
     const level = req.decodedToken.level_id;
     const filepath = JSON.stringify(
-      req.files.map(
-        (e) => "http://192.168.1.10:2005" + "/image" + "/" + e.filename + " "
-      )
+      req.files.map((e) => "/image/" + e.filename)
     );
 
     // const filepath = "http://192.168.18.120/phto"
@@ -115,9 +113,7 @@ module.exports = {
     const { id } = req.params;
     const level = req.decodedToken.level_id;
     const singlePath = JSON.stringify(
-      req.files.map(
-        (e) => "http://localhost:2005" + "/image" + "/" + e.filename + " "
-      )
+      req.files.map((e) => "/image/" + e.filename)
     );
 
     productsModel

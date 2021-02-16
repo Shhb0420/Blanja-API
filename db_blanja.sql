@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 16, 2021 at 05:31 PM
+-- Generation Time: Feb 17, 2021 at 01:11 AM
 -- Server version: 8.0.23-0ubuntu0.20.04.1
 -- PHP Version: 7.4.3
 
@@ -1463,12 +1463,12 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `product_name`, `category_id`, `condition_id`, `product_price`, `product_qty`, `product_desc`, `product_photo`, `user_id`, `status_product_id`, `created_at`) VALUES
-(74, 'DC Shoes McFlurry', 13, 1, 750000, 12, 'Shoes Brand Local Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur tellus at vulputate varius. Suspendisse at pulvinar ex. Vestibulum libero justo, vehicula ut auctor a, pharetra non turpis. Donec sit amet tempus ex. Proin pulvinar sagittis ante sed convallis. Integer vestibulum at libero ut ultricies. Vivamus a sagittis lorem. Fusce consectetur urna mi, ac aliquet libero gravida quis. Integer tincidunt libero eros, vitae porttitor erat suscipit vitae. Proin vulputate diam non vulputate venenatis. Pellentesque condimentum pharetra nisi, sed congue magna dignissim sed. Aliquam tincidunt dapibus consectetur. Suspendisse ullamcorper ligula sapien, sit amet sagittis est suscipit nec. Ut porta turpis facilisis mauris congue, eu ultrices dui convallis. Nullam venenatis mattis arcu, vel molestie est tincidunt vitae.', '[\"http://192.168.1.10:2005/image/1612776269937-image.jpg \",\"http://192.168.1.10:2005/image/1612776269940-image.jpg \",\"http://192.168.1.10:2005/image/1612776270066-image.jpg \"]', 14, 3, '2021-02-08 16:24:30'),
-(76, 'RSCH Neuvy Type', 9, 1, 150000, 10, 'T-Shirt Brand Local Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur tellus at vulputate varius. Suspendisse at pulvinar ex. Vestibulum libero justo, vehicula ut auctor a, pharetra non turpis. Donec sit amet tempus ex. Proin pulvinar sagittis ante sed convallis. Integer vestibulum at libero ut ultricies. Vivamus a sagittis lorem. Fusce consectetur urna mi, ac aliquet libero gravida quis. Integer tincidunt libero eros, vitae porttitor erat suscipit vitae. Proin vulputate diam non vulputate venenatis. Pellentesque condimentum pharetra nisi, sed congue magna dignissim sed. Aliquam tincidunt dapibus consectetur. Suspendisse ullamcorper ligula sapien, sit amet sagittis est suscipit nec. Ut porta turpis facilisis mauris congue, eu ultrices dui convallis. Nullam venenatis mattis arcu, vel molestie est tincidunt vitae.', '[\"http://192.168.1.10:2005/image/1612789808925-image.jpg \",\"http://192.168.1.10:2005/image/1612789808932-image.jpeg \",\"http://192.168.1.10:2005/image/1612789808934-image.jpeg \"]', 14, 3, '2021-02-08 20:10:08'),
-(79, 'Jacket women', 5, 1, 125000, 10, 'Jacket original khas anak muda', '[\"http://localhost:2005/image/1613391997744-image.png \",\"http://localhost:2005/image/1613391997807-image.jpg \",\"http://localhost:2005/image/1613391997819-image.jpg \"]', 14, 3, '2021-02-13 01:21:56'),
-(80, 'Chino Pants', 14, 1, 130000, 10, 'Celana Chino karya anak bangsa Bahan adem berkualitas', '[\"http://192.168.1.10:2005/image/1613160424002-image.jpg \",\"http://192.168.1.10:2005/image/1613160424013-image.jpg \",\"http://192.168.1.10:2005/image/1613160424018-image.jpg \"]', 14, 3, '2021-02-13 03:07:04'),
-(81, 'Mcflurry short', 4, 1, 250000, 13, 'Celana pendek berkualitas tinggi dengan cita rasa yang menakjubkan untuk dipakai, diproduksi oleh karya anak bangsa.', '[\"http://192.168.1.10:2005/image/1613192326526-image.jpg \",\"http://192.168.1.10:2005/image/1613192326530-image.jpeg \",\"http://192.168.1.10:2005/image/1613192326536-image.jpg \"]', 14, 3, '2021-02-13 11:58:46'),
-(82, 'Celana Pantai Converse', 4, 1, 100000, 10, 'Celana pantai converse bahan adem.', '[\"http://192.168.1.10:2005/image/1613321637326-image.png \",\"http://192.168.1.10:2005/image/1613321637339-image.png \",\"http://192.168.1.10:2005/image/1613321637340-image.png \"]', 14, 3, '2021-02-14 23:53:57');
+(74, 'DC Shoes McFlurry', 13, 1, 750000, 12, 'Shoes Brand Local Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur tellus at vulputate varius. Suspendisse at pulvinar ex. Vestibulum libero justo, vehicula ut auctor a, pharetra non turpis. Donec sit amet tempus ex. Proin pulvinar sagittis ante sed convallis. Integer vestibulum at libero ut ultricies. Vivamus a sagittis lorem. Fusce consectetur urna mi, ac aliquet libero gravida quis. Integer tincidunt libero eros, vitae porttitor erat suscipit vitae. Proin vulputate diam non vulputate venenatis. Pellentesque condimentum pharetra nisi, sed congue magna dignissim sed. Aliquam tincidunt dapibus consectetur. Suspendisse ullamcorper ligula sapien, sit amet sagittis est suscipit nec. Ut porta turpis facilisis mauris congue, eu ultrices dui convallis. Nullam venenatis mattis arcu, vel molestie est tincidunt vitae.', '[\"/image/1612776269937-image.jpg \",\"/image/1612776269940-image.jpg \",\"/image/1612776270066-image.jpg \"]', 14, 3, '2021-02-08 16:24:30'),
+(76, 'RSCH Neuvy Type', 9, 1, 150000, 10, 'T-Shirt Brand Local Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur tellus at vulputate varius. Suspendisse at pulvinar ex. Vestibulum libero justo, vehicula ut auctor a, pharetra non turpis. Donec sit amet tempus ex. Proin pulvinar sagittis ante sed convallis. Integer vestibulum at libero ut ultricies. Vivamus a sagittis lorem. Fusce consectetur urna mi, ac aliquet libero gravida quis. Integer tincidunt libero eros, vitae porttitor erat suscipit vitae. Proin vulputate diam non vulputate venenatis. Pellentesque condimentum pharetra nisi, sed congue magna dignissim sed. Aliquam tincidunt dapibus consectetur. Suspendisse ullamcorper ligula sapien, sit amet sagittis est suscipit nec. Ut porta turpis facilisis mauris congue, eu ultrices dui convallis. Nullam venenatis mattis arcu, vel molestie est tincidunt vitae.', '[\"/image/1612789808925-image.jpg \",\"/image/1612789808932-image.jpeg \",\"/image/1612789808934-image.jpeg \"]', 14, 3, '2021-02-08 20:10:08'),
+(79, 'Jacket women', 5, 1, 125000, 10, 'Jacket original khas anak muda', '[\"/image/1613391997744-image.png \",\"/image/1613391997807-image.jpg \",\"/image/1613391997819-image.jpg \"]', 14, 3, '2021-02-13 01:21:56'),
+(80, 'Chino Pants', 14, 1, 130000, 10, 'Celana Chino karya anak bangsa Bahan adem berkualitas', '[\"/image/1613160424002-image.jpg \",\"/image/1613160424013-image.jpg \",\"/image/1613160424018-image.jpg \"]', 14, 3, '2021-02-13 03:07:04'),
+(81, 'Mcflurry short', 4, 1, 250000, 13, 'Celana pendek berkualitas tinggi dengan cita rasa yang menakjubkan untuk dipakai, diproduksi oleh karya anak bangsa.', '[\"/image/1613192326526-image.jpg \",\"/image/1613192326530-image.jpeg \",\"/image/1613192326536-image.jpg \"]', 14, 3, '2021-02-13 11:58:46'),
+(82, 'Celana Pantai Converse', 4, 1, 100000, 10, 'Celana pantai converse bahan adem.', '[\"/image/1613321637326-image.png \",\"/image/1613321637339-image.png \",\"/image/1613321637340-image.png \"]', 14, 3, '2021-02-14 23:53:57');
 
 -- --------------------------------------------------------
 
@@ -1818,8 +1818,7 @@ INSERT INTO `token_whitelist` (`id`, `token`) VALUES
 (135, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsZXZlbF9pZCI6MSwiaWQiOjEzLCJlbWFpbCI6InNob2hpYjA1MTJAZ21haWwuY29tIiwiaWF0IjoxNjEyODgwOTg3fQ.pJPvbkhnDQEXoso5CRz9luTu8-GhkrnO7adIngXJv2s'),
 (136, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsZXZlbF9pZCI6MSwiaWQiOjEzLCJlbWFpbCI6InNob2hpYjA1MTJAZ21haWwuY29tIiwiaWF0IjoxNjEyODg3Njk3fQ.pRnTRfW9DH9bnYF4BF-g65yWHCoT0gpRcV3Lre0EtyY'),
 (137, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsZXZlbF9pZCI6MSwiaWQiOjEzLCJlbWFpbCI6InNob2hpYjA1MTJAZ21haWwuY29tIiwiaWF0IjoxNjEyODkwOTgxfQ.Acay06Xbw8JnY8_1N_VMWYQNQ6wfRUv8jTAy-LZC8Zc'),
-(139, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsZXZlbF9pZCI6MSwiaWQiOjEzLCJlbWFpbCI6InNob2hpYjA1MTJAZ21haWwuY29tIiwiaWF0IjoxNjEyOTMwOTg2fQ.cetxnKP683Gll9ywtHfE8JJAbPV05Yx8PNp8jg8KjDY'),
-(161, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsZXZlbF9pZCI6MSwiaWQiOjEzLCJlbWFpbCI6InNob2hpYjA1MTJAZ21haWwuY29tIiwiaWF0IjoxNjEzNDA3MzEwfQ.e-tZLleNSobR4FesrUNRwCJ1vp8df6EZL5U7btVPh1E');
+(139, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsZXZlbF9pZCI6MSwiaWQiOjEzLCJlbWFpbCI6InNob2hpYjA1MTJAZ21haWwuY29tIiwiaWF0IjoxNjEyOTMwOTg2fQ.cetxnKP683Gll9ywtHfE8JJAbPV05Yx8PNp8jg8KjDY');
 
 -- --------------------------------------------------------
 
@@ -1845,7 +1844,8 @@ INSERT INTO `users` (`id`, `username`, `full_name`, `email`, `password`, `level_
 (14, 'Shhb05', 'Muhammad Shohib', 'shohib05@gmail.com', '$2b$10$SCbjYPITlK1SQuaCpK/Sp.sQRGV7fWLsBfM9VI4OnRaMW73bx44Cu', 2),
 (15, 'Customer', 'Caklaknay', 'haemahe@gmail.com', '$2b$10$VzPNBRVw2WVIHIeeynBISO6WPjFTKhAup4lVjcCKwY4cVknX8R2ee', 1),
 (16, 'gans dong', 'BarZul Shop', 'akbarzul896@gmail.com', '$2b$07$2/WX0Id2dGpYnBwmAZMEIe/WWYohYxbEockfxoR2mRRWl0ITwUtgy', 2),
-(17, 'Aquamen', 'Aquarin', 'idung_jesjes@yahoo.com', '$2b$10$nzu9LghycGCP6VjonDA8J.IojsqspeHMNOd2Nk0LKzM7ZcXFVc7uK', 1);
+(17, 'Aquamen', 'Aquarin', 'idung_jesjes@yahoo.com', '$2b$10$nzu9LghycGCP6VjonDA8J.IojsqspeHMNOd2Nk0LKzM7ZcXFVc7uK', 1),
+(18, 'shhb0420', 'Aquarin SHOP', 'aquarin@gmail.com', '$2b$10$rtLruIi5a0q.oIo2Cgiox.uVoYUT.nn6NL9XLhoDfdgnzMeHHoMEO', 2);
 
 --
 -- Indexes for dumped tables
@@ -2024,19 +2024,19 @@ ALTER TABLE `otp_reset`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 
 --
 -- AUTO_INCREMENT for table `product_colors`
 --
 ALTER TABLE `product_colors`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
 -- AUTO_INCREMENT for table `product_sizes`
 --
 ALTER TABLE `product_sizes`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=142;
 
 --
 -- AUTO_INCREMENT for table `ratings`
@@ -2078,13 +2078,13 @@ ALTER TABLE `status_product`
 -- AUTO_INCREMENT for table `token_whitelist`
 --
 ALTER TABLE `token_whitelist`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
