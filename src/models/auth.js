@@ -87,7 +87,7 @@ module.exports = {
 
               const secret = process.env.SECRET_KEY;
               // const token = jwt.sign({email: data[0].email, level_id : data[0].level_id} , secret);
-              const token = jwt.sign(payload, secret);
+              const token = jwt.sign(payload, secret, { expiresIn: "1d" });
               resolve({
                 token,
                 full_name: data[0].full_name,

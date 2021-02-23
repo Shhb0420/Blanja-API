@@ -4,10 +4,9 @@ const form = require("../helpers/form");
 module.exports = {
   getAllOrdersHistory: (req, res) => {
     const { body } = req;
-    console.log("CEK ",req.decodedToken);
+    console.log("CEK ", req.decodedToken);
     const user_id = req.decodedToken.id;
     const level = req.decodedToken.level_id;
-
 
     orderModel
       .getAllOrdersHistory(level, user_id)
@@ -62,16 +61,16 @@ module.exports = {
   },
 
   getAllOrderHistorySeller: (req, res) => {
-    // const user_id = req.decodedToken.id;
-    const user_id = 7;
+    // const { id } = req;
+    const user_id = req.decodedToken.id;
+    // const user_id = 14;
     // const level = req.decodedToken.level_id;
-
 
     orderModel
       .getAllOrderHistorySeller(user_id)
       .then((data) => {
         form.nestedAll(res, data);
-        console.log(data);
+        // console.log(data);
       })
       .catch((error) => {
         res.status(500).send({
@@ -83,18 +82,18 @@ module.exports = {
   },
 
   updateStatusOrder: (req, res) => {
-    const {id} = req.params;
-    const {body} = req;
+    const { id } = req.params;
+    const { body } = req;
     const level = req.decodedToken.level_id;
 
     orderModel
-    .updateStatusOrder(id, body, level)
-    .then((data) => {
-      res.status(200).send(data)
-    })
-    .catch((err)=> {
-      res.status(500).send(err)
-      console.log(err);
-    });
-  }
+      .updateStatusOrder(id, body, level)
+      .then((data) => {
+        res.status(200).send(data);
+      })
+      .catch((err) => {
+        res.status(500).send(err);
+        console.log(err);
+      });
+  },
 };
